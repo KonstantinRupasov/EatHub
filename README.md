@@ -1,36 +1,36 @@
 # Geat
 Agile Recipe Development and Production
 
-- Developing a food recipie is an iterative process that includes a lot of tries and errors. There seems to be no app aimed at automating it:
+- Developing a food recipe is an iterative process that includes a lot of tries and errors. There seems to be no app aimed at automating it:
     - Please point me into the direction of this kind of apps out there if you seen any
-- During my home cook "carier" I developed dozens of recipies and always thought I could benefit from some kind of Agile automation.
-- This repository is my first attemt to create a prototype of such an app
+- During my home cook "career" I developed dozens of recipes and always thought I could benefit from some kind of Agile automation.
+- This repository is my first attempt to create a prototype of such an app
 
 Main focus of the app:
 
-- JSON-based language allowing to define the recipie
+- JSON-based language allowing to define the recipe
 - Git-based version control
-- Virtual agile "pipline" for recipies:
+- Virtual agile "pipeline" for recipes:
   - Versions
   - Releases
   - Release types:
     - Prototype
-    - Canditate
+    - Candidate
     - Prod
     - etc.
-- Interactive engiune that "runs" recipies:
-  - Guides you through the recipie step by step
+- Interactive engine that "runs" recipes:
+  - Guides you through the recipe step by step
   - Gives you instructions of what to do on each step
-  - Allows to run several independent threads for a single recipie (if you have several cooks working at the same time)
-  - Allows to run multiple recipies at the same time
+  - Allows to run several independent threads for a single recipe (if you have several cooks working at the same time)
+  - Allows to run multiple recipes at the same time
   - Automatically spreads the workload between your team members
 
 Use cases:
 
-- Test kitched or a restaurant developing a recipie
-- Restaurant, running multiple concurent preparations at the same time
+- Test kitchen or a restaurant developing a recipe
+- Restaurant, running multiple concurrent preparations at the same time
 
 Why Geat?
 
-- The app offers team recipie development and version control
-- I like to think about it as Git for recipies - Geat.
+- The app offers team recipe development and version control
+- I like to think about it as Git for recipes - Geat.
