@@ -29,3 +29,8 @@ Use cases:
 
 - Test kitched or a restaurant developing a recipie
 - Restaurant, running multiple concurent preparations at the same time
+
+Why Geat?
+
+- The app offers team recipie development and version control
+- I like to think about it as Git for recipies - Geat.
