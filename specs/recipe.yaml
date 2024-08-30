@@ -1,0 +1,109 @@
+openapi: 3.0.0
+info:
+  title: Recipe API
+  version: 0.0.1
+paths:
+
+  /recipes:
+
+    get:
+      summary: Get recipe list
+      responses:
+        '200':
+          description: Successful success!
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Recipe'
+
+    post:
+      summary: Create a new recipe
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Recipe'
+      responses:
+        '201':
+          description: |
+            Recipe created successfully
+            Returns the ID of the created recipe
+          content:
+            application/json:
+              schema:
+                $ref: './common/components.yaml#/UUID'
+
+  /recipe/{id}:
+    
+    get:
+      summary: Get a recipe by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            $ref: './common/components.yaml#/UUID'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Recipe'
+    
+    patch:
+      summary: Update a recipe by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            $ref: './common/components.yaml#/UUID'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Recipe'
+      responses:
+        '200':
+          description: The recipe updated successfully
+    
+    delete:
+      summary: Delete a recipe by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            $ref: './common/components.yaml#/UUID'
+      responses:
+        '204':
+          description: User deleted successfully
+
+components:
+  
+  schemas:
+
+    Recipe:
+      type: object
+      properties:
+        id:
+          $ref: './common/components.yaml#/UUID'
+        name:
+          type: string
+        ingredients:
+          description: |
+            TODO: List of ingredients
+          type: array
+          items:
+            type: string
+        steps:
+          description: |
+            TODO: List of preparation steps
+          type: array
+          items:
+            type: string
