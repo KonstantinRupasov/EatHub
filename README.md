@@ -1,4 +1,4 @@
-# Geat
+# EatHub
 Agile Recipe Development and Production
 
 - Developing a food recipe is an iterative process that includes a lot of tries and errors. There seems to be no app aimed at automating it:
