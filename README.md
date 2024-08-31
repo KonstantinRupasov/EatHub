@@ -29,8 +29,3 @@ Use cases:
 
 - Test kitchen or a restaurant developing a recipe
 - Restaurant, running multiple concurrent preparations at the same time
-
-Why Geat?
-
-- The app offers team recipe development and version control
-- I like to think about it as Git for recipes - Geat.
